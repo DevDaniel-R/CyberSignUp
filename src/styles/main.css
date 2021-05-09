@@ -10,17 +10,38 @@
   background-size: cover;
 }
 
-.banner {
-  color: #fff;
-  width: 750px;
+.hero-text {
+  color:#fff;
+  width: 60%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-family: 'Roboto Condensed', sans-serif;
+  top: 5%;
+  left: 10%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  letter-spacing: 1.5;
+  font-size: 20px;
+}
+
+.hero-heading{
+padding-bottom: 20px;
+font-family: 'Oswald', sans-serif;
+font-size: 70px;
+font-weight: bold;
+}
+
+.banner {
+  color: #fff;
+  width: 200px;
+  position: absolute;
+  top: 45%;
+  left: 9%;
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  flex-direction: column;
+  justify-content:right;
+  align-items:center;
+  letter-spacing: .5;
 }
 
 .banner-heading {
@@ -33,14 +54,14 @@
 }
 
 .arrow {
-  font-size: 50px;
-  margin-bottom: 50px;
+  font-size: 30px;
+  margin-bottom: 15px;
   animation: anim 3s infinite;
 }
 
 .banner-btn {
-width: 200px;
-padding: 17px;
+width: 150px;
+padding: 10px;
 font-family: 'Roboto Condensed', sans-serif;
 font-size: 17px;
 text-transform: uppercase;
@@ -55,15 +76,15 @@ transition:.3s;
 }
 
 .banner-btn:hover{
-  transform: translateY(-1px);
+  transform: translateY(-5px);
 }
 
 @keyframes anim {
   0% {transform: translateY(0)}
   20% {transform: translateY(0)}
-  40% {transform: translateY(-30px)}
+  40% {transform: translateY(-20px)}
   50% {transform: translateY(0);}
-  60% {transform: translateY(-15px);}
+  60% {transform: translateY(-10px);}
   80% {transform: translateY(0);}
   100% {transform: translateY(0);}
 }
@@ -84,10 +105,15 @@ transition:.3s;
 
 
 .sign-up-form {
-  width: 50%;
-  background-color: #232328;
+  width: 100%;
   padding: 120px 50px;
   box-sizing: border-box;
+  background: rgba( 74, 144, 226, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 8.0px );
+  -webkit-backdrop-filter: blur( 8.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .form-input {
@@ -95,7 +121,7 @@ transition:.3s;
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
-  color: #036403;
+  color: #fff;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #fff;
@@ -106,7 +132,7 @@ transition:.3s;
 }
 
 .form-input:focus {
-  border-bottom-color: #036403;
+  border-bottom-color: #4A90E2;
 }
 
 .sign-up-form p {
@@ -134,7 +160,7 @@ transition:.3s;
   appearance: none;
   width: 30px;
   height: 15px;
-  background-color: #eee;
+  background-color: #fff;
   outline: none;
   border-radius: 20px;
   margin: 0 8px;
@@ -143,14 +169,14 @@ transition:.3s;
 }
 
 .sign-up-form input:checked[type="checkbox"] {
-  background-color: #cc683c;
+  background-color: #4A90E2;
 }
 
 .sign-up-form input[type="checkbox"]::before {
   content: '';
   width: 17px;
   height: 17px;
-  background-color: #aaa;
+  background-color: #fff;
   position: absolute;
   border-radius: 50%;
   top: -1px;
@@ -182,7 +208,7 @@ transition:.3s;
 
 .header {
    width: 50%;
-   background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)),url(../images//green-wire.jpg) center no-repeat;
+   background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, .2));
    background-size: cover;
    box-shadow: -10px 0 30px rgba(0, 0, 0, .3);
    position: relative;
@@ -203,8 +229,8 @@ transition:.3s;
 
 .x-btn {
   position: absolute;
-  bottom: -6%;
-  right: 1%;
+  top: -6%;
+  right: -3%;
   font-size: 25px;
   font-weight: bold;
   color: #fff;
@@ -261,12 +287,12 @@ transition:.3s;
 
 @media(max-width: 800px) {
   .banner {
-      width: 450px;
+      width: 200px;
   }
 
   .banner-heading {
       font-size: 60px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       border-width: 4px;
   }
 

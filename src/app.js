@@ -1,7 +1,6 @@
 document.querySelector('.banner-btn').addEventListener('click', () => {
   document.querySelector('.banner').style.display = 'none';
   document.querySelector('.form-container').style.cssText = 'opacity: 1; visibility: visible';
-  // document.querySelector('.container').style.background = '#036403';
 });
 
 document.querySelector('.x-btn').addEventListener('click', () => {
