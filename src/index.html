@@ -25,23 +25,45 @@
       </div>
 
       <div class="form-container">
-        <form class="sign-up-form">
+        <form name="contact" method="POST" data-netlify="true" class="sign-up-form">
+          <h1 class="form-input-heading">Submission Form</h1>
+          <p>
+            <label>Your Name: <input type="text" name="name" class="form-input" /></label>   
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" class="form-input" /></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message" class="form-input"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+        <div class="x-btn">&#10005;</div>
+      </div> -->
+      </div>
+<!-- 
+      <div class="form-container">
+        <form name="contact" method="POST" data-netlify="true" class="sign-up-form">
           <input type="text" class="form-input" placeholder="Full Name">
           <input type="email" class="form-input"
           placeholder="Email Address">
+          <input type="phone" class="form-input"
+          placeholder="phone (xxxx-xxx-xxxx)">
           <p>Get News?</p>
           <label>No</label>
           <input type="checkbox">
           <label>yes</label>
           <button class="banner-btn" type="button">Sign Up Here</button>
-        </form>
-<!-- 
+        </form> 
+
         <div class="header">
           <h1>Welcome</h1>
-        </div> -->
+        </div> 
 
         <div class="x-btn">&#10005;</div>
-    </div>
+    </div> -->
   </div>
   
   <script src="app.js"></script>
